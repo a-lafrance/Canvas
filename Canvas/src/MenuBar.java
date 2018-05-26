@@ -221,40 +221,44 @@ public class MenuBar extends JMenuBar implements ActionListener {
 			
 			JFileChooser fc = new JFileChooser();
 			fc.addChoosableFileFilter(new CifFilter());
-			
+			fc.setAcceptAllFileFilterUsed(false);
+						
 			int result = fc.showSaveDialog(this);
+			fc.setVisible(false);
 			
 			String ext = "";
 			
 			if (result == JFileChooser.APPROVE_OPTION) {
 				
+				fc.setVisible(false);
+				
 				ext = ".txt";
 				
+				File f = fc.getSelectedFile();
+				
+				if (f != null) {
+					
+					this.canvas.setImageFile(f);
+					
+					this.canvas.wasSaved();
+					
+					try {
+						
+						FileWriter fWriter = new FileWriter(f);
+						FileHandler fHandler = new FileHandler(fWriter);
+
+						fHandler.parseDrawing(this.canvas);
+
+						fc.setVisible(false);
+						
+					}
+					catch (IOException e1) {
+						// TODO Auto-generated catch block
+						e1.printStackTrace();
+					
+					}
+					
 			}
-			
-			File f = fc.getSelectedFile();
-			
-			if (f != null) {
-				
-				this.canvas.setImageFile(f);
-				
-				this.canvas.wasSaved();
-				
-				try {
-					
-					FileWriter fWriter = new FileWriter(f);
-					FileHandler fHandler = new FileHandler(fWriter);
-
-					fHandler.parseDrawing(this.canvas);
-
-					fc.setVisible(false);
-					
-				}
-				catch (IOException e1) {
-					// TODO Auto-generated catch block
-					e1.printStackTrace();
-				
-				}
 				
 			}
 			
