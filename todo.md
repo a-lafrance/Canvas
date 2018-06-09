@@ -1,5 +1,7 @@
 In Priority (Move things around as necessary):
 - [ ] Compatible on both OSes (keep checking regularly if possible)
+- [ ] Use a proprietary file format for storing Canvas drawings (maybe .draw or something)
+  - Save drawings using text formatted a certain way, and write a parser to load the drawings when imported
 - [ ] Bug test!!!
   - Shapes and different drawing modes don't work. If you click it just draws a line randomly and then its the normal brush
   - Possibly from moving to processing
@@ -19,6 +21,7 @@ In Priority (Move things around as necessary):
 - [ ] Selection tools to select specific parts of the drawing
 - [ ] Bug test!!!
   - Make sure all drawing things work as planned
+- [ ] Ability to create "projects" (image sets) so that users can have all their image assets for each of their projects in one place
 - [ ] Cleaner UI with nice graphics and loading screen (JButtons are really useful for popups instead of your current confirm button and JButtons also look more uniform with other apps)
 - [ ] Bug test!!!
   - Look for small things like mispelling things
