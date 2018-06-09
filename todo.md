@@ -7,6 +7,8 @@ In Priority (Move things around as necessary):
 - [ ] Draw on/import a prexisting image not just canvas files
 - [ ] Add a side toolbar along with the menu one
 - [ ] Different brushes and brush sizes (e.g. pencil, normal brush, changing opacity and hardness of brush)
+- [ ] Bug test!!!
+  - Make sure all tools work as intended
 - [ ] Fix canvas size changing when resizing the window (it should make the window bigger but you can only draw on a designated area)
 - [ ] Option for resizing the canvas
 - [ ] Undo and Redo functions
@@ -23,3 +25,7 @@ In Priority (Move things around as necessary):
 - [ ] Logo
 - [ ] Instructions/Help
 - [ ] Tutorials
+- [ ] Filters and weird things like 3D that aren't really that important but nice
+
+On the side:
+- [ ] Try out other forms of input like with keyboard or a constant drawing mode along with selection mode
