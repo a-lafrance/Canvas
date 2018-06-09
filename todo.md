@@ -12,7 +12,7 @@ In Priority (Move things around as necessary):
 - [ ] Fix canvas size changing when resizing the window (it should make the window bigger but you can only draw on a designated area)
 - [ ] Option for resizing the canvas
 - [ ] Undo and Redo functions
-- [ ] Keyboard shortcuts for everything (e.g. CMD/CTRL+S is save)
+- [ ] Keyboard shortcuts for everything (e.g. CMD/CTRL+S is save) and things like prompt to save on exit
 - [ ] Drawing layers
 - [ ] Blend modes
 - [ ] Masking (Look it up)
