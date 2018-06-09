@@ -1,7 +1,8 @@
 In Priority (Move things around as necessary):
 - [ ] Compatible on both OSes (keep checking regularly if possible)
 - [ ] Bug test!!!
-  - [ ]
+  - Shapes and different drawing modes don't work. If you click it just draws a line randomly and then its the normal brush
+  - Possibly from moving to processing
 - [ ] Change brush color
 - [ ] Draw on/import a prexisting image not just canvas files
 - [ ] Add a side toolbar along with the menu one
@@ -14,4 +15,11 @@ In Priority (Move things around as necessary):
 - [ ] Blend modes
 - [ ] Masking (Look it up)
 - [ ] Selection tools to select specific parts of the drawing
+- [ ] Bug test!!!
+  - Make sure all drawing things work as planned
+- [ ] Cleaner UI with nice graphics and loading screen (JButtons are really useful for popups instead of your current confirm button and JButtons also look more uniform with other apps)
+- [ ] Bug test!!!
+  - Look for small things like mispelling things
 - [ ] Logo
+- [ ] Instructions/Help
+- [ ] Tutorials
