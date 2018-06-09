@@ -1,0 +1,17 @@
+In Priority (Move things around as necessary):
+- [ ] Compatible on both OSes (keep checking regularly if possible)
+- [ ] Bug test!!!
+  - [ ]
+- [ ] Change brush color
+- [ ] Draw on/import a prexisting image not just canvas files
+- [ ] Add a side toolbar along with the menu one
+- [ ] Different brushes and brush sizes (e.g. pencil, normal brush, changing opacity and hardness of brush)
+- [ ] Fix canvas size changing when resizing the window (it should make the window bigger but you can only draw on a designated area)
+- [ ] Option for resizing the canvas
+- [ ] Undo and Redo functions
+- [ ] Keyboard shortcuts for everything (e.g. CMD/CTRL+S is save)
+- [ ] Drawing layers
+- [ ] Blend modes
+- [ ] Masking (Look it up)
+- [ ] Selection tools to select specific parts of the drawing
+- [ ] Logo
