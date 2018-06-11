@@ -9,7 +9,7 @@ In Priority (Move things around as necessary):
 - [ ] Bug test!!!
   - Shapes and different drawing modes don't work. If you click it just draws a line randomly and then its the normal brush
   - Possibly from moving to processing
-- [-] Change brush color
+- [x] Change brush color
 - [ ] Draw on/import a prexisting image not just canvas files
 - [ ] Add a side toolbar along with the menu one
 - [ ] Different brushes and brush sizes (e.g. pencil, normal brush, changing opacity and hardness of brush)
