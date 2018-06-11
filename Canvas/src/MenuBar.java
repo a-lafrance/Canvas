@@ -1,3 +1,4 @@
+import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -10,6 +11,7 @@ import java.io.IOException;
 
 import javax.imageio.ImageIO;
 import javax.swing.ButtonGroup;
+import javax.swing.JColorChooser;
 import javax.swing.JFileChooser;
 import javax.swing.JFrame;
 import javax.swing.JMenu;
@@ -27,7 +29,7 @@ public class MenuBar extends JMenuBar implements ActionListener {
 	private JMenuItem newFile, open, save, saveAs, export, 
 	  selectAll, cut, copy, paste,
 	  square, rect, circle, line, text, image,
-	  draw, fill, select, erase;
+	  draw, fill, select, erase, changeColor;
 	
 	public MenuBar(DrawingArea canvas, ToolBar toolbar) {
 		
@@ -140,9 +142,9 @@ public class MenuBar extends JMenuBar implements ActionListener {
         group.add(this.select);
         drawingMode.add(select);
         
-//        this.changeColor = new JMenuItem("Change Color");
-//        this.changeColor.addActionListener(this);
-//        toolsMenu.add(changeColor);
+        this.changeColor = new JMenuItem("Change Color");
+        this.changeColor.addActionListener(this);
+        toolsMenu.add(changeColor);
 //        
 //        this.changeBackground = new JMenuItem("Change Background Color");
 //        this.changeBackground.addActionListener(this);
@@ -336,6 +338,10 @@ public class MenuBar extends JMenuBar implements ActionListener {
 			
 			this.canvas.setDrawingMode(false);
 			
+		}
+		else if(source == this.changeColor) {
+			Color c = JColorChooser.showDialog(null, "Choose a color!", null);
+			canvas.setColor(c);
 		}
 //		else if (source == this.changeBackground) {
 //			
