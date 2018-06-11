@@ -2,6 +2,10 @@ In Priority (Move things around as necessary):
 - [ ] Compatible on both OSes (keep checking regularly if possible)
 - [ ] Use a proprietary file format for storing Canvas drawings (maybe .draw or .cnvs or something)
   - Save drawings using text formatted a certain way, and write a parser to load the drawings when imported
+  - OR serialize DrawingArea.java, saving the field values and just load the serliazed object in
+- [ ] Fix the problems with save and save as
+  - Save when the canvas project is still "Untitled" gives error - it should do the same thing as save as in this case
+  - Save as repeats itself 3 times for some reason
 - [ ] Bug test!!!
   - Shapes and different drawing modes don't work. If you click it just draws a line randomly and then its the normal brush
   - Possibly from moving to processing
@@ -23,6 +27,7 @@ In Priority (Move things around as necessary):
   - Make sure all drawing things work as planned
 - [ ] Ability to create "projects" (image sets) so that users can have all their image assets for each of their projects in one place
 - [ ] Cleaner UI with nice graphics and loading screen (JButtons are really useful for popups instead of your current confirm button and JButtons also look more uniform with other apps)
+- [ ] Customize the JColorChooser
 - [ ] Bug test!!!
   - Look for small things like mispelling things
 - [ ] Logo
