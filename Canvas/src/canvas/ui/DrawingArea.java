@@ -1,3 +1,4 @@
+package canvas.ui;
 import java.awt.Color;
 import processing.core.PApplet;
 import processing.core.PGraphics;
@@ -26,6 +27,9 @@ import javax.swing.JMenuItem;
 import javax.swing.JPanel;
 import javax.swing.JRadioButtonMenuItem;
 import javax.swing.WindowConstants;
+
+import canvas.shapes.Line;
+import canvas.shapes.Shape;
 
 public class DrawingArea extends PApplet implements WindowListener {
 	

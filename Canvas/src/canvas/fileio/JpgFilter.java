@@ -1,8 +1,9 @@
+package canvas.fileio;
 import java.io.File;
 
 import javax.swing.filechooser.FileFilter;
 
-public class GifFilter extends FileFilter {
+public class JpgFilter extends FileFilter {
 
 	@Override
 	public boolean accept(File f) {
@@ -13,7 +14,7 @@ public class GifFilter extends FileFilter {
 		
 		String name = f.getName();
 		
-		return name.endsWith(".gif") || name.endsWith(".GIF");
+		return name.endsWith(".jpg") || name.endsWith(".JPG");
 		
 	}
 
@@ -21,7 +22,7 @@ public class GifFilter extends FileFilter {
 	public String getDescription() {
 		// TODO Auto-generated method stub
 		
-		return "GIF (.gif)";
+		return "JPG (.jpg)";
 	
 	}
 

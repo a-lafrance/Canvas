@@ -1,4 +1,7 @@
+package canvas.main;
 import javax.swing.JFrame;
+
+import canvas.ui.StartWindow;
 
 public class Canvas {
 

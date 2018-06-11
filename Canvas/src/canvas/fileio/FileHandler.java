@@ -1,3 +1,4 @@
+package canvas.fileio;
 import java.awt.Color;
 import java.awt.Point;
 import java.awt.image.BufferedImage;
@@ -8,6 +9,12 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
+
+import canvas.shapes.Line;
+import canvas.shapes.Rectangle;
+import canvas.shapes.Shape;
+import canvas.shapes.TextBox;
+import canvas.ui.DrawingArea;
 
 public class FileHandler {
 	

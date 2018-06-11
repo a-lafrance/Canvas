@@ -1,3 +1,4 @@
+package canvas.ui;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.event.ActionEvent;
@@ -19,6 +20,11 @@ import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
 import javax.swing.JRadioButtonMenuItem;
 
+import canvas.fileio.CifFilter;
+import canvas.fileio.FileHandler;
+import canvas.fileio.GifFilter;
+import canvas.fileio.JpgFilter;
+import canvas.fileio.PngFilter;
 import processing.awt.PSurfaceAWT;
 import processing.core.PApplet;
 

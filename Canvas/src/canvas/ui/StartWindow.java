@@ -1,3 +1,4 @@
+package canvas.ui;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.event.MouseListener;
@@ -12,6 +13,7 @@ import javax.swing.JMenu;
 import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
 
+import canvas.fileio.FileHandler;
 import processing.awt.PSurfaceAWT;
 import processing.core.PApplet;
 

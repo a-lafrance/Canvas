@@ -1,8 +1,9 @@
+package canvas.fileio;
 import java.io.File;
 
 import javax.swing.filechooser.FileFilter;
 
-public class PngFilter extends FileFilter {
+public class CifFilter extends FileFilter {
 
 	@Override
 	public boolean accept(File f) {
@@ -13,7 +14,7 @@ public class PngFilter extends FileFilter {
 		
 		String name = f.getName();
 		
-		return name.endsWith(".png") || name.endsWith(".PNG");
+		return name.endsWith(".txt") || name.endsWith(".TXT");
 		
 	}
 
@@ -21,7 +22,7 @@ public class PngFilter extends FileFilter {
 	public String getDescription() {
 		// TODO Auto-generated method stub
 		
-		return "PNG (.png)";
+		return "Canvas Image File (.txt)";
 	
 	}
 
