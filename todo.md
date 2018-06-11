@@ -1,6 +1,6 @@
 In Priority (Move things around as necessary):
 - [ ] Compatible on both OSes (keep checking regularly if possible)
-- [ ] Use a proprietary file format for storing Canvas drawings (maybe .draw or something)
+- [ ] Use a proprietary file format for storing Canvas drawings (maybe .draw or .cnvs or something)
   - Save drawings using text formatted a certain way, and write a parser to load the drawings when imported
 - [ ] Bug test!!!
   - Shapes and different drawing modes don't work. If you click it just draws a line randomly and then its the normal brush
