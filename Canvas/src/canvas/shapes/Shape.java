@@ -86,6 +86,13 @@ public abstract class Shape {
 		
 	}
 	
+	public void moveTo(int x, int y) {
+		
+		this.setX(x);
+		this.setY(y);
+		
+	}
+
 	public void setSelected(boolean isSelected) {
 		
 		this.isSelected = isSelected;

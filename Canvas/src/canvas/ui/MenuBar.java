@@ -25,6 +25,7 @@ import canvas.fileio.FileHandler;
 import canvas.fileio.GifFilter;
 import canvas.fileio.JpgFilter;
 import canvas.fileio.PngFilter;
+import canvas.shapes.Rectangle;
 import processing.awt.PSurfaceAWT;
 import processing.core.PApplet;
 
@@ -358,9 +359,8 @@ public class MenuBar extends JMenuBar implements ActionListener {
 //		}
 		else if (source == this.square) {
 			
-			//this.canvas.getDrawing().addShape(new Rectangle(this.canvas.getX() + this.canvas.getDrawing().getImageWidth() / 3, 
-			//											 this.canvas.getY() + this.canvas.getDrawing().getImageHeight() / 2,
-			//											 60, 60));
+			// insert a shape at the center of the canvas
+			this.canvas.addShape(new Rectangle(this.canvas.drawingWidth / 2, this.canvas.drawingHeight / 2, 50, 50));
 			
 		}
 		

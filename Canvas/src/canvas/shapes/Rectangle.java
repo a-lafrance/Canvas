@@ -143,6 +143,20 @@ public class Rectangle extends Shape {
 		
 	}
 	
+	public boolean isPointOnSelectionPoint(int x, int y) {
+		
+		// Top Left point
+		//this.getX() - 3 - this.width / 2, this.getY() - 3 - this.height / 2, 6, 6
+		
+		// Top Right point
+		
+		// Bottom Left point
+		
+		// Bottom Right point
+		return false;
+		
+	}
+	
 	public int getWidth() {
 		
 		return this.width;

@@ -166,6 +166,8 @@ public class DrawingArea extends PApplet implements WindowListener {
 	
 	public void mousePressed() {
 		
+		boolean shapeWasSelected = false;
+		
 		for (int i = 0; i < this.shapes.size(); i++) {
 			
 			Shape s = (Shape)this.shapes.toArray()[i];
@@ -173,13 +175,14 @@ public class DrawingArea extends PApplet implements WindowListener {
 			if (s.isPointInShape(this.mouseX, this.mouseY)) {
 				
 				s.setSelected(true);
+				shapeWasSelected = true;
 				
 			}
 			else {
-				
+				System.out.println("hi");
 				if (s.isSelected()) {
 					
-					s.toggleState();
+					s.setSelected(false);
 					return;
 					
 				}
@@ -193,20 +196,49 @@ public class DrawingArea extends PApplet implements WindowListener {
 			
 		}
 
-		Line l = new Line(this.mouseX, this.mouseY, this.pmouseX, this.pmouseY, this.currentColor, this.currentThickness);
-		this.drawing.add(l);
-		
-		this.wasEdited();
+		if (!shapeWasSelected) {
+			
+			Line l = new Line(this.mouseX, this.mouseY, this.pmouseX, this.pmouseY, this.currentColor, this.currentThickness);
+			this.drawing.add(l);
+			
+			this.wasEdited();
+			
+		}
 
+	}
+	
+	public void addShape(Shape shape) {
+		
+		this.shapes.add(shape);
+		
 	}
 	
 	public void mouseDragged() {
 		
-		Line l = new Line(this.mouseX, this.mouseY, this.pmouseX, this.pmouseY, this.currentColor, this.currentThickness);
-		this.drawing.add(l);
+		boolean shapeWasMoved = false;
+		
+		for (int i = 0; i < this.shapes.size(); i++) {
+			
+			Shape s = (Shape)this.shapes.toArray()[i];
+			
+			if (s.isSelected()) {
+				
+				s.moveTo(this.mouseX, this.mouseY);
+				shapeWasMoved = true;
+				
+			}
+			
+		}
+		
+		if (!shapeWasMoved) {
+			
+			Line l = new Line(this.mouseX, this.mouseY, this.pmouseX, this.pmouseY, this.currentColor, this.currentThickness);
+			this.drawing.add(l);
+						
+		}
 		
 		this.wasEdited();
-		
+
 	}
 	
 	public BufferedImage getImage() {
